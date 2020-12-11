@@ -1,12 +1,25 @@
 const express = require("express");
-const mongojs = require("mongojs");
+const mongoose = require("mongoose");
 
-// create
+const PORT = process.env.PORT || 3000;
 
-// read
+const app = express();
 
-// update
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.listen(8080, () => {
-  console.log("App running on port 8080!");
+app.use(express.static("public"));
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
+
+// routes
+app.use(require("./routes/api.js"));
+
+app.use(require("./routes/html.js"));
+
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
 });
