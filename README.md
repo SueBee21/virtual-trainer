@@ -1,7 +1,6 @@
 # virtual-trainer
 
 ## Description 
-  
 This application is an exercise tracker.  This was developed to help the user reach their fitness goals more quickly when they track their workout progress. When the page is loaded, the user is given the option to create a new workout or continue with their last workout. The user is able to view a "stats" page to view their progress over time.
   
 ## Table of Contents
@@ -23,7 +22,8 @@ morgan
 * As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
 
 ## Deployed Application
-
+https://virtual-motivation-station.herokuapp.com/?id=5fdf7326fb8d950017a4dcf8
+<img width="1792" alt="virtual-trainer-img" src="https://user-images.githubusercontent.com/68358265/102717666-bd72e400-42b1-11eb-8076-ce1487b834b5.png">
 
   
 ## Credits
